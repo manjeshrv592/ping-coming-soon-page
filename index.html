@@ -10,11 +10,90 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <h1>Ping coming soon page</h1>
+    <!-- Header start -->
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="./images/logo.svg" alt="Logo" class="header__logo-img" />
+      </a>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <!-- Hero text content start -->
+          <div class="hero__text-content">
+            <h1 class="hero__title">
+              We are launching <span class="hero__title--bold">soon!</span>
+            </h1>
+            <p class="hero__description">Subscribe and get notified</p>
+
+            <!-- Form start -->
+            <form action="#" class="form">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="btn btn--primary">Notify Me</button>
+            </form>
+            <!-- Form end -->
+          </div>
+          <!-- Hero text content end   -->
+          <!-- Hero media start -->
+          <div class="hero__media">
+            <img
+              src="./images/illustration-dashboard.png"
+              alt="Illustration"
+              class="hero__img"
+            />
+          </div>
+          <!-- Hero media end -->
+        </div>
+      </section>
+    </main>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <nav class="social-nav">
+        <ul class="social-nav__list">
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- Footer end -->
   </body>
 </html>
