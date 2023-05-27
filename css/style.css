@@ -86,6 +86,23 @@ img {
 /* Container */
 
 /* Header */
+.header {
+  padding-top: 8rem;
+  padding-bottom: 32rem;
+  text-align: center;
+}
+
+.header__logo:link,
+.header__logo:visited,
+.header__logo:hover,
+.header__logo:active {
+  text-decoration: none;
+  display: inline-block;
+  width: 5.6rem;
+}
+
+.header__logo-img {
+}
 
 /* Hero */
 
