@@ -292,7 +292,8 @@ img {
   }
 
   .header {
-    padding-bottom: 4.8rem;
+    padding-top: 9rem;
+    padding-bottom: 3.8rem;
   }
 
   .header__logo:link,
