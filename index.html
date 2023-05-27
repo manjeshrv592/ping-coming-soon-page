@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap"
       rel="stylesheet"
     />
     <!-- Font awesome -->
@@ -48,11 +48,16 @@
 
             <!-- Form start -->
             <form action="#" class="form">
-              <input
-                type="email"
-                class="form__input"
-                placeholder="Your email address"
-              />
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Your email address"
+                />
+                <small class="form__feedback d-none"
+                  >Please provide a valid email address</small
+                >
+              </div>
               <button type="submit" class="btn btn--primary">Notify Me</button>
             </form>
             <!-- Form end -->
@@ -99,5 +104,8 @@
       </p>
     </footer>
     <!-- Footer end -->
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -167,6 +167,27 @@ img {
   gap: 1rem;
 }
 
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.form__feedback {
+  text-align: left;
+  font-size: 1.2rem;
+  padding-left: 1.6rem;
+  font-style: italic;
+}
+
+.form__feedback--valid {
+  color: var(--blue);
+}
+
+.form__feedback--invalid {
+  color: var(--light-red);
+}
+
 .form__input {
   padding: 1rem 3.2rem;
   border: 1px solid var(--pale-blue);
@@ -252,6 +273,9 @@ img {
 
 /***********************************/
 /* Util Classes */
+.d-none {
+  display: none;
+}
 
 /**************************************/
 /* Responsive styling */
@@ -308,13 +332,25 @@ img {
   .form {
     flex-direction: row;
     gap: 1.6rem;
+    align-items: start;
+  }
+
+  .form__group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 0;
+  }
+
+  .form__feedback {
+    font-size: 1.4rem;
+    padding-left: 3rem;
   }
 
   .form__input {
     padding: 1.8rem 3.2rem;
     font-size: 1.6rem;
-    margin-bottom: 0;
-    flex: 1;
   }
 
   .form__input::placeholder {
